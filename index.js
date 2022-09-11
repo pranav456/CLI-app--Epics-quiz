@@ -2,6 +2,7 @@ var readlinesync = require("readline-sync");
 var userAnswer = readlinesync.question("Hello, May I know your name? ");
 console.log("NAMASTE! " + userAnswer + ". Welcome to Quiz competition.");
 console.log("Let's begin with Round 1");
+console.log("Type the correct option");
 
 var score = 0;
 function play(question, answer) {
@@ -18,8 +19,10 @@ function play(question, answer) {
         "Congratulations!, you have proceeded to Round 3. Keep it up"
       );
     }
-  } else console.log("You got it wrong!");
-  console.log("The right answer is " + answer);
+  } else {
+    console.log("You got it wrong!");
+    console.log("The right answer is " + answer);
+  }
 }
 
 var arr = [
@@ -30,7 +33,7 @@ var arr = [
     c:Parasurama
     d:Vasudeva
 `,
-    answer: "Vasudeva",
+    answer: "d",
   },
   {
     question: `2)What is the name of the conchshell of Sahadeva?
@@ -39,7 +42,7 @@ var arr = [
     c:Devadatta
     d:Panchajanya
 `,
-    answer: "Manipushpaka",
+    answer: "b",
   },
   {
     question: `3)Who was the wife of Lakshmana?
@@ -48,7 +51,7 @@ var arr = [
     c:Urmila
     d:Sita
 `,
-    answer: "Urmila",
+    answer: "c",
   },
   {
     question: `4)Who was the father of Hanuman?
@@ -57,7 +60,7 @@ var arr = [
     c:Sugriva
     d:Angada
 `,
-    answer: "Kesari",
+    answer: "a",
   },
   {
     question: `5)Who was the son of architect Vishwakarma in the Ramayana?
@@ -66,7 +69,7 @@ var arr = [
     c:Bala
     d:kala
 `,
-    answer: "Nala",
+    answer: "a",
   },
   {
     question: `6)What is the name of the bow of krishna?
@@ -75,7 +78,7 @@ var arr = [
     c:Saranga
     d:Hare
 `,
-    answer: "Saranga",
+    answer: "c",
   },
   {
     question: `7)What was the other name of Kunthi?
@@ -84,7 +87,7 @@ var arr = [
     c:Kunthiram
     d:Santhi
 `,
-    answer: "Krishnaa",
+    answer: "a",
   },
   {
     question: `8)Who is the son of Chitrangada and Arjuna?
@@ -93,7 +96,7 @@ var arr = [
     c:Krishnaa
     d:Kesi
 `,
-    answer: "Babruvahana",
+    answer: "b",
   },
   {
     question: `9)What is the name of Balarama's club?
@@ -102,7 +105,7 @@ var arr = [
     c:Kris
     d:Gada
 `,
-    answer: "Sunanda",
+    answer: "b",
   },
   {
     question: `10)Who is the father of Yamuna 
@@ -112,7 +115,7 @@ devi?
     c:Yama
     d:Indra
 `,
-    answer: "Surya",
+    answer: "a",
   },
   {
     question: `11)Which of the following are the parts of Ramcharitmanas?
@@ -121,7 +124,7 @@ devi?
     c:Kishkinda Kanda
     d:All of the above
 `,
-    answer: "All of the above",
+    answer: "d",
   },
 ];
 
